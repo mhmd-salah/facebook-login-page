@@ -1,0 +1,222 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Work Sans", sans-serif;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+/* End Global Rules */
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+}
+@media(max-width: 1200px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+}
+/* .container .txt-content{
+    width: 100%;
+} */
+.container{
+    height: 100vh;
+}
+.container .txt-content,
+.container .form-conte{
+    flex: 1;
+}
+
+.container .txt-content img{
+    height: 56px;
+    margin-bottom: 10px;
+}
+.container .txt-content p{
+    font-size: 28px;
+    width: 600px;
+    line-height: 1.2;
+}
+.container .form-content .login{
+    padding: 30px;
+    width: 350px;
+    height: 400px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+}
+.login{
+    border-radius: 7px;
+}
+input{
+    caret-color: #1877f2;
+    background-color: #1876f220;
+    color: 1877f2;
+}
+input:empty{
+    background-color: #1876f209;
+}
+input[type="text"]{
+    padding: 14px 16px;
+    outline: none;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    width: 100%;
+    margin-bottom: 20px;
+    outline: none;
+}
+input[type="password"]{
+    padding: 14px 16px;
+    outline: none;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    width: 100%;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+input[type="submit"]{
+    text-align: center;
+    width: 100%;
+    padding: 13px;
+    background-color: #1877f2;
+    border: none;
+    border-radius: 7px;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+}
+.login .forg{
+    text-align: center;
+    color: #1877f2;
+    font-size: 14px;
+}
+.login hr{
+    border: none;
+    border-bottom: 1px solid #ddd;
+}
+.login .creat{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login .cr-ac{
+    padding: 12px 16px;
+    background-color: #42b72a;
+    font-size: 17px;
+    position: absolute;
+    margin-top: 91px;
+    width: fit-content;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 9px;
+    color: white;
+    font-weight: 600;
+}
+.main-heading{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    bottom: 20px;
+    text-align: center;
+}
+.main-heading h3{
+    text-align: center;
+    /* font-size: 16px; */
+    color: #888;
+    line-height: 1.5;
+    text-transform: capitalize;
+    margin-bottom: -108px;
+}
+.main-heading h2 {
+    font-weight: normal;
+    font-size: 14px;
+    color: #777;
+    position: relative;
+    padding-bottom: 15px;
+}
+.main-heading h2::before{
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 2px;
+    background-color: #777;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.main-heading h2::after{
+    content: "";
+    position: absolute;
+    bottom: -16px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid #bfbfbf;
+    left: 50%;
+    transform: translateX(-50%);
+}
+@media(max-width:1200px){
+    .container{
+        display: none;
+    }
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media(max-width:1200px){
+    .bon{
+        position:absolute ;
+        top: 50%;
+        text-align: center;
+        padding: 10px;
+        text-transform: capitalize;
+        color: #777;
+    }
+}
+@media(min-width: 1200px){
+    .bon{
+        display: none;
+    }
+}
+
